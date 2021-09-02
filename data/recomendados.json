@@ -1,0 +1,34 @@
+[
+    {
+        "id": 51,
+        "nombre": "Triana",
+        "precio": 1199.99,
+        "cantidad": 1,
+        "categoria": "Increíble color violáceo con complejidad de aromas. De taninos finos, estructura justa y larga persistencia en boca. Gran potencial de guarda.",
+        "img": "images/triana.jpg"
+    },
+    {
+        "id": 52,
+        "nombre": "Cristóbal Barrel",
+        "precio": 899.67,
+        "cantidad": 1,
+        "categoria": "Un vino intenso y complejo. Descubrí la nueva cepa de la línea emblema de Bodega Don Cristóbal, deleitate con su estructura y cuerpo inigualable.",
+        "img": "images/barrel-cabernet.jpg"
+    },
+    {
+        "id": 53,
+        "nombre": "Luna del Desierto",
+        "precio": 759.99,
+        "cantidad": 1,
+        "categoria": "seduce desde el principio con sus aromas frutados que se funden con notas de vainilla y café. Taninos suaves y redondos. Ideal para momentos de relax y placer.",
+        "img": "images/luna.jpg"
+    },
+    {
+        "id": 54,
+        "nombre": "Almirante Malbec",
+        "precio": 2488.99,
+        "cantidad": 1,
+        "categoria": "De color oscuro y exuberante en boca, con sabores a mora, cereza, moca y ciruela. Taninos suaves dan paso a un final persistente y frutado.",
+        "img": "images/almirante.jpg"
+    }
+]

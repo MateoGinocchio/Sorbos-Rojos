@@ -1,0 +1,418 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.botonComprar {
+    background-color: beige;
+    color: black;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.botonComprar:hover {
+    background-color: rgb(245, 245, 175);
+}
+
+/* Pagina de menor de edad */
+.containerMenorEdad {
+    background-color: rgb(207, 35, 35);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerTexto{
+    border: 3px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+/* MENU DESPEGABLE */
+.menuInicio {
+    list-style: none;
+    font-size: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    margin: 10px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*MENÚ*/
+.aDecoration {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(251, 251, 219);
+    margin: 30px;
+    font-size: 20px;
+}
+
+.aDecoration:hover {
+    color: #950a0b;
+    font-size: 25px;
+}
+
+.inicioMenu:hover {
+    opacity: 0.80;
+    transition: opacity 500ms;
+}
+
+/*Recomendaciones*/
+
+.tituloRecomendados {
+    text-align: center;
+    color: beige;
+    margin: 0px;
+    background-color: #232323;
+    padding-top: 40px;
+    font-family: 'Teko', sans-serif;
+    font-size: 70px;
+}
+
+.recomendaciones {
+    background-color: #232323;
+    width: 1263px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardRecomendacion {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.destacado {
+    display: flex;
+    position: relative;
+    bottom: 190px;
+    left: 230px;
+}
+
+.destacado:hover {
+    background-color: wheat;
+    border-radius: 50px;
+}
+
+.containerr {
+    width: 230px;
+    text-align: center;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.containerr1 {
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#productos {
+    display: flex;
+    justify-content: center;
+}
+
+.seccionCentral {
+    margin: 80px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    border: #950a0b 1px solid;
+    border-radius: 3px;
+}
+
+.seccionInfo {
+    width: 500px;
+    height: 378;
+}
+
+/* SECCION CARRITO */
+
+ .carritoMenu {
+display: flex;
+position: absolute;
+top: 2%;
+right: 1%;
+} 
+
+.containerCarrito {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    width: 450px;
+
+}
+
+/* SECCION VINOS */
+.containerVinos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #232323;
+}
+
+/* FORMULARIO */
+.divForm {
+    display: flex;
+    justify-content: center;
+    background-image: url(images/istockphoto-1069099708-170667a.jpg);
+    height: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputForm {
+    width: 350px;
+}
+
+.inputForm1 {
+    width: 200px;
+}
+.inputForm2 {
+    width: 100px;
+}
+
+/* SECCION KITS */
+.cardKit {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.colorRed {
+    color: rgb(202, 26, 26);
+}
+
+.tituloCombos {
+    text-align: center;
+    color: beige;
+    margin: 0px;
+    background-color: #232323;
+    padding-top: 40px;
+    font-family: 'Teko', sans-serif;
+}
+
+.combos {
+    background-color: #232323;
+    width: 1263px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* FILTRADOR */
+.filtrador {
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#filtroCategorias {
+    border: #950a0b 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+.footer {
+    background-color: #950a0b;
+    color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: space-around;
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+    border-top: 3px black solid;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerContactanos {
+    display: flex;
+}
+
+.derechos {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textDerechos {
+    color: #950a0b;
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.metodosPago {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aFooter {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+.aFooter:hover {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+div.contactanos div img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* QUIENES SOMOS */
+
+.quienesSomos {
+    font-family: "Teko";
+    color: beige;
+    margin: 0px;
+    text-align: center;
+    font-size: 70px;
+}
+
+.sobreNosotros {
+    background-color: #232323;
+}
+
+.sorbosRojos {
+    width: 300px;
+    height: 361px;
+    background-image: url(images/fondoBeige.jpg);
+    text-align: center;
+    margin: 0px;
+    border-end-end-radius: 5px;
+    border-start-end-radius: 5px;
+}
+
+.sorbosRojos1 {
+    width: 300px;
+    height: 361px;
+    background-image: url(images/fondoBeige.jpg);
+    text-align: center;
+    margin: 0px;
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+}
+
+.containerSorbosRojos {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.textQuienesSomos {
+    font-size: 25px;
+    color: #950a0b;
+}
+
+/* CONTACTO */
+
+.formContacto {
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.sizeForm {
+    width: 700px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sizeForm1 {
+    width: 700px;
+    height: 60px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sizeForm1:hover {
+    background-color: #950a0b;
+}
+
+.sizeFormMensaje {
+    width: 700px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.contactoSection {
+    background-color: #232323;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.datosContacto {
+    background-color: #950a0b;
+    margin-top: 12px;
+}

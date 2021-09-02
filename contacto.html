@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FUENTE TITULOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <!-- FUENTE GRAL -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!-- MENU -->
+        <div style="background-image: url(images/fondoMadera1.jpg);">
+            <nav>
+                <ul class="menuInicio">
+                    <div>
+                        <a href="index.html">
+                            <img class="inicioMenu" src="images/LogoVinoV2.png" alt="Logo Sorbos Rojos" width="150px"
+                                height="150px">
+                        </a>
+                    </div>
+                    <li>
+                        <a class="aDecoration" href="vinos.html">VINOS</a>
+                    </li>
+                    <li>
+                        <a class="aDecoration" href="wiskies.html">WISKIES</a>
+                    </li>
+                    <li>
+                        <a class="aDecoration" href="sorbosRojos.html">SORBOS ROJOS</a>
+                    </li>
+                    <li>
+                        <a class="aDecoration" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- CARRITO -->
+        <div class="carritoMenu">
+            <div class="btn-group dropleft">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+                    CARRITO <span id="carritoCantidad" class="badge bg-secondary">0</span>
+                </button>
+                <div id="carritoProductos" class="dropdown-menu">
+                    <!-- ACA SE GENERA INTERFAZ CARRITO -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="tituloRecomendados">CONTACTO</h1>
+
+    <section class="contactoSection">
+        <div>
+            <h3 class="datosContacto">Datos del contacto</h3>
+            <div style="display: flex;">
+                <img src="images/marcador-de-posicion.png" alt="" width="30px" height="30px">
+                <p>Calle falsa 123, Buenos Aires.</p>
+            </div>
+            <div style="display: flex;">
+                <img src="images/telefono.png" alt="" width="30px" height="30px">
+                <p>+54 9 11 5014-9585</p>
+            </div>
+            <div style="display: flex;">
+                <img src="images/sobre-de-correo-electronico.png" alt="" width="30px" height="30px">
+                <p>sorbosrojos@gmail.com</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.9679458250002!2d-58.5841995854356!3d-34.75640027309829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc50a3a65c667%3A0x13836c026890f54c!2sLuis%20Van%20Beethoven%206650%2C%20B1757AGT%20Gregorio%20de%20Laferrere%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1630347741716!5m2!1ses-419!2sar" width="400" height="279" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <div>
+            <form class="formContacto" id="registroContacto">
+                <input class="sizeForm" type="text" placeholder="Nombre y Apellido">
+                <input class="sizeForm" type="email" placeholder="Email">
+                <input class="sizeForm" type="number" placeholder="Telefono">
+                <input class="sizeFormMensaje" type="text" placeholder="Mensaje">
+                <input class="sizeForm1" type="submit" value="ENVIAR">
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+
+        <div class="sections">
+            <h2 style="color: black; font-weight: 600;">Secciones</h2>
+            <a class="aFooter" href="index.html">Home</a>
+            <a class="aFooter" href="vinos.html">Vinos</a>
+            <a class="aFooter" href="wiskies.html">Wiskies</a>
+            <a class="aFooter" href="sorbosRojos.html">Sorbos Rojos</a>
+            <a class="aFooter" href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="metodosPago">
+            <h2 style="color: black; font-weight: 600; margin-bottom: 25px;">Medios de pago</h2>
+            <div style="margin-bottom: 5px;">
+                <img src="images/visa.png" alt="" width="50px">
+                <img src="images/mastercard@2x.png" alt="" width="50px">
+                <img src="images/amex@2x.png" alt="" width="50px">
+                <img src="images/diners@2x.png" alt="" width="50px">
+                <img src="images/banelco@2x.png" alt="" width="50px">
+                <img src="images/cabal@2x.png" alt="" width="50px">
+                <img src="images/nativa@2x.png" alt="" width="50px">
+            </div>
+            <div>
+                <img src="images/tarjeta-naranja@2x.png" alt="" width="50px">
+                <img src="images/tarjeta-shopping.png" alt="" width="50px">
+                <img src="images/mercadopago@2x.png" alt="" width="50px">
+                <img src="images/argencard@2x.png" alt="" width="50px">
+                <img src="images/cencosud@2x.png" alt="" width="50px">
+                <img src="images/pagofacil@2x.png" alt="" width="50px">
+                <img src="images/rapipago@2x.png" alt="" width="50px">
+            </div>
+
+        </div>
+
+        <div class="contactanos">
+
+            <h2 style="color: black; font-weight: 600;">Contactanos</h2>
+
+            <div class="containerContactanos">
+                <img src="images/icono-instagram.png" alt="" width="20px">
+                Sorbos Rojos|Instagram
+            </div>
+            <div class="containerContactanos">
+                <img src="images/icono-facebook.png" alt="" width="20px">
+                Sorbos Rojos|Facebook
+            </div>
+            <div class="containerContactanos">
+                <img src="images/icono-whatsapp.png" alt="" width="20px">
+                +54 9 11 5014-9585
+            </div>
+            <div class="containerContactanos">
+                <img src="images/sobre-de-correo-electronico.png" alt="" width="20px">
+                sorbosrojos@gmail.com
+            </div>
+            <div class="containerContactanos">
+                <img src="images/marcador-de-posicion.png" alt="" width="20px">
+                G. de Laferrere, Buenos Aires.
+            </div>
+        </div>
+
+    </footer>
+
+    <div class="derechos">
+        <p class="textDerechos">Tienda de Vinos | Sorbos Rojos</p>
+        <p class="textDerechos">Sitio Web desarrollado por Mateo Ginocchio</p>
+    </div>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/formContacto.js"></script>
+    <script src="./js/globals.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/producto.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
