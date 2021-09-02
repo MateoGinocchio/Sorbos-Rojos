@@ -46,7 +46,7 @@ function addCarrito(e) {
       carrito.push(recomendado.find(p => p.id == productoID));
     }else{
       //SI SE ENCONTRO AGREGAR UN CANTIDAD
-      seleccionado.agregarCantidad(1);
+      seleccionado.agregarCantidad(0);
     }
     //GUARDAR EN STORAGE
     localStorage.setItem("CARRITO",JSON.stringify(carrito));
