@@ -62,34 +62,59 @@
     </div>
   </header>
 
-  <div class="filtrador">
-    <h5 style="color: white;">Filtrar productos por categorias</h5>
-    <select id="filtroCategorias">
-      <!-- CARGAR OPCIONES -->
-    </select>
+  <div class="buscador">
+    <div class="input-group search">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Search</span>
+      </div>
+      <input id="busquedaProducto" type="text" class="form-control" aria-label="Sizing example input"
+        aria-describedby="inputGroup-sizing-default">
+    </div>
   </div>
 
-  <div class="input-group mb-3">
-    <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroup-sizing-default">Search</span>
-    </div>
-    <input id="busquedaProducto" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-  </div>
+  <div class="containerFiltros">
 
-  <div style="display: flex;">
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">MIN</span>
-      </div>
-      <input id="minProducto" value="1" type="number" class="form-control inputPrecio" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    <div class="categorias">
+      <h5 style="color: white;">Filtrar productos por categorias:</h5>
+      <select id="filtroCategorias">
+        <!-- CARGAR OPCIONES -->
+      </select>
     </div>
 
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">MAX</span>
+    <h1 style="font-family: 'Teko', sans-serif; color: beige; font-size: 100px;">VINOS</h1>
+
+    <div>
+
+      <h5 style="color: white;">Filtrar productos por precio:</h3>
+        
+      <div>
+
+      <div class="filtroPrecios">
+        <div style="margin-right: 15px;">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">MIN</span>
+            </div>
+            <input id="minProducto" value="1" type="number" class="form-control inputPrecio"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>
+        <div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">MAX</span>
+            </div>
+            <input id="maxProducto" value="200" type="number" class="form-control inputPrecio"
+            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>        
+
       </div>
-      <input id="maxProducto" value="200" type="number" class="form-control inputPrecio" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
     </div>
+        
+    </div>
+
   </div>
 
   <div id="productos" class="containerVinos"></div>
@@ -97,16 +122,16 @@
   <footer class="footer">
 
     <div class="sections">
-      <h2 style="color: black; font-weight: 600;">Secciones</h2>
-      <a class="aFooter" href="index.html">Home</a>
-      <a class="aFooter" href="vinos.html">Vinos</a>
-      <a class="aFooter" href="wiskies.html">Wiskies</a>
-      <a class="aFooter" href="sorbosRojos.html">Sorbos Rojos</a>
-      <a class="aFooter" href="contacto.html">Contacto</a>
+      <h2 style="color: black; font-family: 'Teko', sans-serif;">Secciones</h2>
+      <a class="aFooter" href="index.html">>Home</a>
+      <a class="aFooter" href="vinos.html">>Vinos</a>
+      <a class="aFooter" href="wiskies.html">>Wiskies</a>
+      <a class="aFooter" href="sorbosRojos.html">>Sorbos Rojos</a>
+      <a class="aFooter" href="contacto.html">>Contacto</a>
     </div>
 
     <div class="metodosPago">
-      <h2 style="color: black; font-weight: 600; margin-bottom: 25px;">Medios de pago</h2>
+      <h2 style="color: black; margin-bottom: 25px; font-family: 'Teko', sans-serif;">Medios de pago</h2>
       <div style="margin-bottom: 5px;">
         <img src="images/visa.png" alt="" width="50px">
         <img src="images/mastercard@2x.png" alt="" width="50px">
@@ -129,7 +154,7 @@
     </div>
 
     <div class="contactanos">
-      <h2 style="color: black; font-weight: 600;">Contactanos</h2>
+      <h2 style="color: black;font-family: 'Teko', sans-serif;">Contactanos</h2>
       <div class="containerContactanos">
         <img src="images/icono-instagram.png" alt="" width="20px">
         Sorbos Rojos|Instagram
@@ -159,7 +184,7 @@
   </footer>
   <div class="derechos">
     <p class="textDerechos">Tienda de Vinos | Sorbos Rojos</p>
-    <p class="textDerechos">Sitio Web desarrollado por Mateo Ginocchio</p>
+    <p class="textDerechos">Copyright Sorbos Rojos - 2021. Todos los derechos reservados. Defensa de los consumidores.</p>
   </div>
 
   <!-- BOOTSTRAP -->

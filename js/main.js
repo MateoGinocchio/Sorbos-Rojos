@@ -52,17 +52,18 @@ $(document).ready(function () {
             }
         });
     });
-
-});
-//GENERAR INTERFAZ DE RECOMENDADOS
-const getURL = "data/recomendados.json";
-$.get(getURL, function (data, estado) {
-    if (estado == "success") {
-        for (const literal of data) {
-            recomendado.push(new Bebidas(literal.id, literal.nombre, literal.precio, literal.cantidad, literal.categoria, literal.img));
+    
+    //GENERAR INTERFAZ DE RECOMENDADOS
+    const getURL = "data/recomendados.json";
+    $.get(getURL, function (data, estado) {
+        if (estado == "success") {
+            for (const literal of data) {
+                recomendado.push(new Bebidas(literal.id, literal.nombre, literal.precio, literal.cantidad, literal.categoria, literal.img));
+            }
         }
-    }
-    recomendados(recomendado, ".recomendaciones")
+        recomendados(recomendado, ".recomendaciones")
+    });
+
 });
 //LOAD
 window.addEventListener("load", () => {

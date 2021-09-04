@@ -131,6 +131,7 @@ nav {
 
 .containerr {
     width: 230px;
+    height: 387px;
     text-align: center;
     background-color: white;
     border: black 1px solid;
@@ -247,19 +248,45 @@ right: 1%;
     align-items: center;
 }
 
-/* FILTRADOR */
-.filtrador {
-    background-color: #232323;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+#filtroCategorias {
+    border-radius: 5px;
+    background-color: white;
+    width: 400px;
+    height: 40px;
 }
 
-#filtroCategorias {
-    border: #950a0b 1px solid;
-    border-radius: 5px;
-    margin-left: 10px;
-    background-color: white;
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    height: 100px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px!important;
+}
+
+.categorias {
+    background-color: #232323;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerFiltros {
+    display: flex;
+    background-color: #232323;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filtroPrecios {
+    background-color: #232323;
+    display: flex;
+    width: 400px;
 }
 
 .footer {
@@ -269,7 +296,7 @@ right: 1%;
     justify-content: space-around;
     border-left: 3px black solid;
     border-right: 3px black solid;
-    border-top: 3px black solid;
+    border-top: 1px black solid;
 }
 
 .sections {
