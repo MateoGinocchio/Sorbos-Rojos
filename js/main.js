@@ -27,6 +27,7 @@ $(document).ready(function () {
     $(".dropdown-menu").click(function (e) {
         e.stopPropagation();
     })
+    //CARGAR PRODUCTOS JSON Y GENERAR INTERFAZ
     const URLGET = "data/productos.json";
     $.get(URLGET, function (data, estado) {
         if (estado == "success") {
@@ -52,8 +53,8 @@ $(document).ready(function () {
             }
         });
     });
-    
-    //GENERAR INTERFAZ DE RECOMENDADOS
+
+    //CARGAR PRODUCTOS JSON Y GENERAR INTERFAZ DE RECOMENDADOS
     const getURL = "data/recomendados.json";
     $.get(getURL, function (data, estado) {
         if (estado == "success") {
@@ -71,37 +72,37 @@ window.addEventListener("load", () => {
     //ANIMACIONES FADE EN INICIO
     $(".cardRecomendacion").fadeIn(5000);
     $(".cardKit").fadeIn(6000);
+    $(".animacionFade").fadeIn(3000);
+    $(".animacionFade1").fadeIn(6000);
+    $(".animacionFade2").fadeIn(15000);
+    $(".botonComprar").click(() => {
+        $(".containerr1").animate({
+            width: 287,
+            height: 515
+        }, "fast")
+        $(".containerr1").animate({
+            width: 283.75,
+            height: 512.33
+        }, "fast")
+    })
 })
 
-//ANIMACION CON JQUERY
-
-$(".botonComprar").click(() => {
-    $(".containerr").animate({
-        width: 235,
-        height: 385
-    }, "fast")
-    console.log("Agregado al carrito");
-    $(".containerr").animate({
-        width: 230,
-        height: 380
-    }, "fast")
-})
-
-$("#busquedaProducto").keydown(function (e) { 
+//FILTRAR PRODUCTO POR NOMBRE
+$("#busquedaProducto").keydown(function (e) {
     const criterio = this.value;
-    if(criterio != "") {
+    if (criterio != "") {
         const encontrados = elementos.filter(p => p.nombre.includes(criterio.toUpperCase()));
         productosJquery(encontrados, "#productos")
     }
 });
 
 //DEFINIR EVENTOS SOBRE EL INPUT DE FILTRO DE PRECIOS
-$(".inputPrecio").change(function (e) { 
+$(".inputPrecio").change(function (e) {
     const min = $("#minProducto").val();
     const max = $("#maxProducto").val();
-    if((min > 0) && (max > 0)){
+    if ((min > 0) && (max > 0)) {
         const encontrados = elementos.filter(p => p.precio >= min && p.precio <= max);
         console.log(encontrados);
         productosJquery(encontrados, "#productos")
-    } 
+    }
 });

@@ -170,8 +170,25 @@ nav {
 }
 
 /* SECCION CARRITO */
+.aCarrito {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
 
- .carritoMenu {
+.aCarrito:hover {
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.imgCarrito:hover {
+    width: 60px;
+}
+
+.carritoMenu {
 display: flex;
 position: absolute;
 top: 2%;
@@ -180,10 +197,68 @@ right: 1%;
 
 .containerCarrito {
     display: flex;
-    justify-content: space-around;
     height: 40px;
-    width: 450px;
+    width: 550px;
+    background-color: beige;
+    align-items: center;
+}
 
+.containerCarrito p {
+    margin: 0px;
+}
+
+.hrCarrito {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    
+}
+
+#carritoProductos {
+    background-color: beige;
+    border: black 2px solid;
+    margin: 0px;
+    padding: 0px;
+}
+
+.buttonDelete {
+    text-decoration: none;
+    list-style: none;
+    color: red;
+}
+.buttonDelete:hover {
+    text-decoration: none;
+    list-style: none;
+    color: red;
+}
+
+.buttonSub{
+    width: 25px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.buttonAdd{
+    width: 25px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.buttonSub:hover {
+    text-decoration: none;
+    list-style: none;
+    color: red;
+}
+.buttonAdd:hover {
+    text-decoration: none;
+    list-style: none;
+    color: blue;
+}
+
+#btnConfirmar {
+    background-color: #950a0b;
+    font-size: 20px;
+    color: white;
 }
 
 /* SECCION VINOS */
@@ -336,6 +411,7 @@ right: 1%;
     text-decoration: none;
     color: white;
 }
+
 .aFooter:hover {
     list-style: none;
     list-style-type: none;

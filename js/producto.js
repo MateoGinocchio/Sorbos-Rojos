@@ -3,7 +3,7 @@ class Bebidas {
     constructor(id, nombre, precio, cantidad, categoria, img) {
         this.id = parseInt(id);
         this.nombre = nombre.toUpperCase();
-        this.precio = parseFloat(precio);
+        this.precio = precio;
         this.cantidad = parseInt(cantidad);
         this.categoria = categoria;
         this.img = img;

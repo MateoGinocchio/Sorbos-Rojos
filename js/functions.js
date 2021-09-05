@@ -10,12 +10,12 @@ function productosJquery(elementos, id) {
                         <a id="${elemento.id}" class="btn btn-danger botonComprar" href="#">AGREGAR AL CARRITO</a>
                       </div>`);
     }
-    //AÑADIMOS EL EVENTO CLICK A LOS BOTONES
+    //AÑADIMOS EL EVENTO CLICK A LOS BOTONES CON SU RESPECTIVA FUNCION
     $(".botonComprar").on("click", añadirCarrito)
 }
 
 //GENERAR INTERFAZ DE PRODUCTOS EN SECCION RECOMENADOS.
-function recomendados(recomendado,id) {
+function recomendados(recomendado, id) {
     $(id).empty();
     for (const elemento of recomendado) {
         $(id).append(`<div class="containerr1">
@@ -29,7 +29,7 @@ function recomendados(recomendado,id) {
                         <a id="${elemento.id}" class="btn btn-danger botonComprar" href="">AGREGAR AL CARRITO</a>
                       </div>`);
     }
-    //AÑADIMOS EL EVENTO CLICK A LOS BOTONES
+    //AÑADIMOS EL EVENTO CLICK A LOS BOTONES CON SU RESPECTIVA FUNCION
     $(".botonComprar").click(addCarrito);
 }
 
@@ -42,14 +42,14 @@ function addCarrito(e) {
     //BUSCAR PRIMERO EL OBJETO EN EL CARRITO (SI FUE SELECCIONADO);
     const seleccionado = carrito.find(p => p.id == productoID);
     //SI NO SE ENCONTRO BUSCAR EN ARRAY DE PRODUCTOS
-    if(seleccionado == undefined){
-      carrito.push(recomendado.find(p => p.id == productoID));
-    }else{
-      //SI SE ENCONTRO AGREGAR UN CANTIDAD
-      seleccionado.agregarCantidad(0);
+    if (seleccionado == undefined) {
+        carrito.push(recomendado.find(p => p.id == productoID));
+    } else {
+        //SI SE ENCONTRO AGREGAR UN CANTIDAD
+        seleccionado.agregarCantidad(0);
     }
     //GUARDAR EN STORAGE
-    localStorage.setItem("CARRITO",JSON.stringify(carrito));
+    localStorage.setItem("CARRITO", JSON.stringify(carrito));
     //GENERAR SALID PRODUCTO
     carritoI(carrito);
 }
@@ -62,19 +62,19 @@ function carritoI(recomendado) {
     //AL HACER CLICK EN "AGREGAR AL CARRITO" AGREGAS LOS PRODUCTOS
     for (const elemento of recomendado) {
         $("#carritoProductos").append(`<div class="containerCarrito">
-                                            <p>${elemento.nombre} $${elemento.precio}</p>
-                                            <span class="badge badge-dark">${elemento.cantidad}</span>
-                                            <span class="badge badge-success"> $ ${elemento.subtotal()}</span>
-                                            <a href="" id="${elemento.id}" class="btn btn-info buttonSub">-</a>
-                                            <a href="" id="${elemento.id}" class="btn btn-info buttonAdd">+</a>
-                                            <a href="" id="${elemento.id}" class="btn btn-danger buttonDelete">x</a>
+                                            <p style="width: 230px;">${elemento.nombre} $${elemento.precio}</p>
+                                            <span style="margin: 10px; width: 30px;" class="badge badge-dark">${elemento.cantidad}</span>
+                                            <span style="margin: 10px; width: 50px;" class="badge badge-success"> $ ${elemento.subtotal()}</span>
+                                            <a href="" id="${elemento.id}" class="buttonSub">-</a>
+                                            <a href="" id="${elemento.id}" class="buttonAdd">+</a>
+                                            <a style="margin: auto;" href="" id="${elemento.id}" class="buttonDelete">Eliminar</a>
                                         </div>
-                                        <hr>`);
+                                        <hr class="hrCarrito">`);
     }
     //AGREGAR TOTAL
-    $("#carritoProductos").append(`<p id="totalCarrito">TOTAL ${totalCarrito(elementos)} </p>`)
+    $("#carritoProductos").append(`<h5 style="display: flex; justify-content: center; font-weight: 900;" id="totalCarrito">TOTAL $${totalCarrito(recomendado)} </h5>`)
     //BOTON CONFIRMAR 
-    $("#carritoProductos").append(`<button id="btnConfirmar">CONFIRMAR COMPRA</button>`)
+    $("#carritoProductos").append(`<a class="btn" href="contacto.html" id="btnConfirmar">CONFIRMAR COMPRA</a>`)
     //ASOCIAMOS LOS EVENTOS A LA INTERFAZ GENERADA
     $("#btnConfirmar").click(confirmarCompra);
     $(".buttonDelete").click(eliminarProducto);
@@ -93,14 +93,14 @@ function añadirCarrito(e) {
     //BUSCAR PRIMERO EL OBJETO EN EL CARRITO (SI FUE SELECCIONADO);
     const seleccionado = carrito.find(p => p.id == productoID);
     //SI NO SE ENCONTRO BUSCAR EN ARRAY DE PRODUCTOS
-    if(seleccionado == undefined){
-      carrito.push(elementos.find(p => p.id == productoID));
-    }else{
-      //SI SE ENCONTRO AGREGAR UN CANTIDAD
-      seleccionado.agregarCantidad(1);
+    if (seleccionado == undefined) {
+        carrito.push(elementos.find(p => p.id == productoID));
+    } else {
+        //SI SE ENCONTRO AGREGAR UN CANTIDAD
+        seleccionado.agregarCantidad(1);
     }
     //GUARDAR EN STORAGE
-    localStorage.setItem("CARRITO",JSON.stringify(carrito));
+    localStorage.setItem("CARRITO", JSON.stringify(carrito));
     //GENERAR SALID PRODUCTO
     carritoUI(carrito);
 }
@@ -113,19 +113,19 @@ function carritoUI(elementos) {
     //AL HACER CLICK EN "AGREGAR AL CARRITO" AGREGAS LOS PRODUCTOS
     for (const elemento of elementos) {
         $("#carritoProductos").append(`<div class="containerCarrito">
-                                            <p>${elemento.nombre} $${elemento.precio}</p>
-                                            <span class="badge badge-dark">${elemento.cantidad}</span>
-                                            <span class="badge badge-success"> $ ${elemento.subtotal()}</span>
-                                            <a href="" id="${elemento.id}" class="btn btn-info buttonSub">-</a>
-                                            <a href="" id="${elemento.id}" class="btn btn-info buttonAdd">+</a>
-                                            <a href="" id="${elemento.id}" class="btn btn-danger buttonDelete">x</a>
+                                            <p style="width: 230px;">${elemento.nombre} $${elemento.precio}</p>
+                                            <span style="margin: 10px; width: 30px;" class="badge badge-dark">${elemento.cantidad}</span>
+                                            <span style="margin: 10px; width: 50px;" class="badge badge-success"> $ ${elemento.subtotal()}</span>
+                                            <a href="" id="${elemento.id}" class="buttonSub">-</a>
+                                            <a href="" id="${elemento.id}" class="buttonAdd">+</a>
+                                            <a style="margin: auto;" href="" id="${elemento.id}" class="buttonDelete">Eliminar</a>
                                         </div>
-                                        <hr>`);
+                                        <hr class="hrCarrito">`);
     }
     //AGREGAR TOTAL
-    $("#carritoProductos").append(`<p id="totalCarrito">TOTAL ${totalCarrito(elementos)} </p>`)
+    $("#carritoProductos").append(`<h5 style="display: flex; justify-content: center; font-weight: 900;" id="totalCarrito">TOTAL $${totalCarrito(elementos)} </h5>`)
     //BOTON CONFIRMAR 
-    $("#carritoProductos").append(`<button id="btnConfirmar">CONFIRMAR COMPRA</button>`)
+    $("#carritoProductos").append(`<div style="display: flex; justify-content: center;"><button id="btnConfirmar">CONFIRMAR COMPRA</button></div>`)
     //ASOCIAMOS LOS EVENTOS A LA INTERFAZ GENERADA
     $("#btnConfirmar").click(confirmarCompra);
     $(".buttonDelete").click(eliminarProducto);
@@ -133,7 +133,7 @@ function carritoUI(elementos) {
     $('.buttonSub').click(restarCantidad);
 }
 
-//ELIMINAR CARRITO
+//FUNCION ELIMINAR CARRITO
 function eliminarProducto(e) {
     e.preventDefault()
     let posicion = carrito.findIndex(p => p.id == e.target.id);
@@ -184,10 +184,11 @@ function selectUI(lista, selector) {
     $(selector).prepend(`<option value='TODOS' selected>TODOS</option>`);
 }
 
+// FUNCION CALCULAR TOTAL CARRITO
 function totalCarrito() {
     let total = 0;
     carrito.forEach(p => total += p.subtotal());
-    return total 
+    return total
 }
 
 //FUNCION CONFIRMAR COMPRA
@@ -195,7 +196,7 @@ function confirmarCompra() {
     $("#btnConfirmar").hide();
     //ENVIAR INFORMACION
     const URL = "https://jsonplaceholder.typicode.com/posts/";
-    $.post(URL, JSON.stringify(carrito), function(datos, estado){
+    $.post(URL, JSON.stringify(carrito), function (datos, estado) {
         console.log(estado);
         console.log(datos);
     })

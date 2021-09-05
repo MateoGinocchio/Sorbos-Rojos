@@ -50,10 +50,11 @@
     <!-- CARRITO -->
     <div class="carritoMenu">
       <div class="btn-group dropleft">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" id="dropdownMenuButton"
-          aria-haspopup="true" aria-expanded="false">
-          CARRITO <span id="carritoCantidad" class="badge bg-secondary">0</span>
-        </button>
+        <a type="button" class="aCarrito" data-toggle="dropdown" id="dropdownMenuButton" aria-haspopup="true"
+          aria-expanded="false">
+          <img class="imgCarrito" src="images/carrito-de-compras (1).png" alt="" width="50px">
+          <span id="carritoCantidad" class="badge bg-secondary">0</span>
+        </a>
         <div id="carritoProductos" class="dropdown-menu">
           <!-- Dropdown menu links -->
         </div>
@@ -86,33 +87,33 @@
     <div>
 
       <h5 style="color: white;">Filtrar productos por precio:</h3>
-        
-      <div>
 
-      <div class="filtroPrecios">
-        <div style="margin-right: 15px;">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">MIN</span>
-            </div>
-            <input id="minProducto" value="1" type="number" class="form-control inputPrecio"
-            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-        </div>
         <div>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">MAX</span>
+
+          <div class="filtroPrecios">
+            <div style="margin-right: 15px;">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">MIN</span>
+                </div>
+                <input id="minProducto" value="1" type="number" class="form-control inputPrecio"
+                  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
             </div>
-            <input id="maxProducto" value="200" type="number" class="form-control inputPrecio"
-            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">MAX</span>
+                </div>
+                <input id="maxProducto" value="200" type="number" class="form-control inputPrecio"
+                  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+
           </div>
-        </div>        
 
-      </div>
+        </div>
 
-    </div>
-        
     </div>
 
   </div>
@@ -184,7 +185,8 @@
   </footer>
   <div class="derechos">
     <p class="textDerechos">Tienda de Vinos | Sorbos Rojos</p>
-    <p class="textDerechos">Copyright Sorbos Rojos - 2021. Todos los derechos reservados. Defensa de los consumidores.</p>
+    <p class="textDerechos">Copyright Sorbos Rojos - 2021. Todos los derechos reservados. Defensa de los consumidores.
+    </p>
   </div>
 
   <!-- BOOTSTRAP -->

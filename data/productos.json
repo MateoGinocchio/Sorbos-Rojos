@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nombre": "Luigi Bosca Malbec",
-        "precio": 1572.99,
+        "precio": 1572,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/luigi-bosca-malbec-1.jpeg"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "nombre": "Trumpeter Reserve",
-        "precio": 1141.77,
+        "precio": 1141,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/trumpeter-rose-1.jpeg"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "nombre": "Alamos Malbec",
-        "precio": 960.00,
+        "precio": 960,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/alamos-malbec-1.jpeg"
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "nombre": "Rutini Rose",
-        "precio": 3999.99,
+        "precio": 3999,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/rutini-rose-2.jpeg"
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "nombre": "Cosecha Tardia",
-        "precio": 337.99,
+        "precio": 337,
         "cantidad": 1,
         "categoria": "BLANCO",
         "img": "images/valmont.jpeg"
@@ -50,7 +50,7 @@
     {
         "id": 8,
         "nombre": "La Linda Rosé",
-        "precio": 856.75,
+        "precio": 856,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/la-linda-2.jpeg"
@@ -58,7 +58,7 @@
     {
         "id": 7,
         "nombre": "Rutini Cabernet",
-        "precio": 2189.99,
+        "precio": 2189,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/rutini-cabernet-1.jpeg"
@@ -66,7 +66,7 @@
     {
         "id": 12,
         "nombre": "Portillo Rosé",
-        "precio": 389.89,
+        "precio": 389,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/portillo-rose-2.jpeg"
@@ -74,7 +74,7 @@
     {
         "id": 10,
         "nombre": "Baron B Extra Brut",
-        "precio": 1629.99,
+        "precio": 1629,
         "cantidad": 1,
         "categoria": "ESPUMANTES",
         "img": "images/baronb.jpeg"
@@ -106,7 +106,7 @@
     {
         "id": 15,
         "nombre": "Finca Sophenia State",
-        "precio": 1299.99,
+        "precio": 1299,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/finca-sophenia-1.jpeg"
@@ -114,7 +114,7 @@
     {
         "id": 13,
         "nombre": "Killka Blanc",
-        "precio": 630.56,
+        "precio": 630,
         "cantidad": 1,
         "categoria": "BLANCO",
         "img": "images/killka.jpeg"
@@ -130,7 +130,7 @@
     {
         "id": 17,
         "nombre": "La Puerta Alta",
-        "precio": 772.85,
+        "precio": 772,
         "cantidad": 1,
         "categoria": "BLANCO",
         "img": "images/lapuertaalta.jpeg"
@@ -186,7 +186,7 @@
     {
         "id": 24,
         "nombre": "Avarizza Canari",
-        "precio": 659.99,
+        "precio": 659,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/avarizza.jpeg"
@@ -194,7 +194,7 @@
     {
         "id": 25,
         "nombre": "Piatelli Torrontés",
-        "precio": 889.99,
+        "precio": 889,
         "cantidad": 1,
         "categoria": "BLANCO",
         "img": "images/piatelli.jpeg"
@@ -210,7 +210,7 @@
     {
         "id": 27,
         "nombre": "Los Pasos Red",
-        "precio": 320.55,
+        "precio": 320,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/los-pasos-1.jpeg"
@@ -218,7 +218,7 @@
     {
         "id": 28,
         "nombre": "Bianchi Extra Brut",
-        "precio": 699.99,
+        "precio": 699,
         "cantidad": 1,
         "categoria": "ESPUMANTES",
         "img": "images/bianchi.jpeg"
@@ -226,7 +226,7 @@
     {
         "id": 29,
         "nombre": "Toia Gran Reserva",
-        "precio": 750.25,
+        "precio": 750,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/toia-gran-reserva-1.jpeg"
@@ -242,7 +242,7 @@
     {
         "id": 31,
         "nombre": "Rutini Chardonnay",
-        "precio": 1999.99,
+        "precio": 1999,
         "cantidad": 1,
         "categoria": "BLANCO",
         "img": "images/rutini-chardonnay.jpeg"
@@ -258,7 +258,7 @@
     {
         "id": 33,
         "nombre": "Gewurztraminer",
-        "precio": 2050.99,
+        "precio": 2050,
         "cantidad": 1,
         "categoria": "BLANCO",
         "img": "images/rutini-gew.jpeg"
@@ -290,7 +290,7 @@
     {
         "id": 37,
         "nombre": "Viniterra Malbec",
-        "precio": 767.99,
+        "precio": 767,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/viniterra.jpeg"
@@ -298,7 +298,7 @@
     {
         "id": 38,
         "nombre": "Luigi Bosca Rosé",
-        "precio": 1899.99,
+        "precio": 1899,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/luigi.jpeg"
@@ -338,7 +338,7 @@
     {
         "id": 43,
         "nombre": "Vuelá Rosado",
-        "precio": 859.66,
+        "precio": 859,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/vuelá-rosado.jpeg"
@@ -346,7 +346,7 @@
     {
         "id": 44,
         "nombre": "La poderosa Malbec",
-        "precio": 637.33,
+        "precio": 637,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/lapoderosa.jpeg"
@@ -354,7 +354,7 @@
     {
         "id": 45,
         "nombre": "Goyenechea Merlot",
-        "precio": 359.99,
+        "precio": 359,
         "cantidad": 1,
         "categoria": "ROSADO",
         "img": "images/goyenechea-merlot-rose.jpeg"
@@ -362,7 +362,7 @@
     {
         "id": 46,
         "nombre": "Famiglia Bianchi",
-        "precio": 869.99,
+        "precio": 869,
         "cantidad": 1,
         "categoria": "TINTO",
         "img": "images/famiglia-bianchi.jpeg"
@@ -378,7 +378,7 @@
     {
         "id": 48,
         "nombre": "Santa Julia Viogner",
-        "precio": 428.66,
+        "precio": 428,
         "cantidad": 1,
         "categoria": "BLANCO",
         "img": "images/santa-julia.jpeg"
